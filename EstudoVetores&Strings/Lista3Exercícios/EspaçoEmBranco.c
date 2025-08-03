@@ -1,7 +1,8 @@
 #include <stdio.h>
 int main(void){    
 
-char frase[100], naoespaço[100];
+char frase[100]; 
+char naoespaco[100];
 
 
 printf("digite uma frase: ");
@@ -11,11 +12,11 @@ int b;
 
 for(b = 0; frase[b] != '\0'; b++) {
     if(frase[b] != ' ' && frase[b] != '\n') {  
-        naoespaço[a] = frase[b];
+        naoespaco[a] = frase[b];
         a++;
     }
 }
-naoespaço[a] = '\0';
-printf("%s", naoespaço);
+naoespaco[a] = '\0';
+printf("%s", naoespaco);
 
 } 
